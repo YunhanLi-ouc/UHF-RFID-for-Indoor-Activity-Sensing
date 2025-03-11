@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # 读取数据
-file_path = "rfid_data_t2.csv"  # 请替换为你的数据文件路径
+file_path = "Datasets/rfid_data_t2.csv"  # 请替换为你的数据文件路径
 rfid_data = pd.read_csv(file_path)
 
 # 确保时间戳格式正确
@@ -43,7 +43,7 @@ rfid_data['RSSI_KF'] = [kf_rssi.update(rssi) for rssi in rfid_data['RSSI']]
 rfid_data['Phase_KF'] = [kf_phase.update(phase) for phase in rfid_data['Phase']]
 
 # 保存处理后的数据
-filtered_file_path = "rfid_data_filtered.csv"  # 你可以更改文件路径
+filtered_file_path = "Datasets/rfid_data_filtered.csv"  # 你可以更改文件路径
 rfid_data.to_csv(filtered_file_path, index=False)
 
 # 绘制 RSSI 滤波前后对比
