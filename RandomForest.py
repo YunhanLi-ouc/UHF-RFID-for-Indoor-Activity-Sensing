@@ -50,10 +50,10 @@ plt.title("Confusion Matrix")
 plt.show()
 
 # Feature Importance Analysis
-importances = clf.feature_importances_
+importance = clf.feature_importances_
 feature_names = features
 plt.figure(figsize=(8, 5))
-plt.barh(feature_names, importances)
+plt.barh(feature_names, importance)
 plt.xlabel("Feature Importance")
 plt.ylabel("Feature")
 plt.title("Feature Importance in Classification")
