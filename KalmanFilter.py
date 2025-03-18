@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # 读取数据
-file_path = "Datasets/rfid_data_t2.csv"
+file_path = "Datasets/rfid_data_3p.csv"
 rfid_data = pd.read_csv(file_path)
 
 rfid_data['Timestamp'] = pd.to_datetime(rfid_data['Timestamp'])
