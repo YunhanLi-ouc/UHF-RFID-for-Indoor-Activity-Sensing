@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Load data
-file_path = "Datasets/rfid_data_3p.csv"
+file_path = "../Datasets/rfid_data_3p.csv"
 rfid_data = pd.read_csv(file_path)
 
 # Convert Timestamp to datetime format and sort data
@@ -59,7 +59,7 @@ for p in platforms:
 
 # Merge the processed data
 filtered_data = pd.concat(platform_data.values()).sort_values(by='Timestamp')
-filtered_file_path = "Datasets/rfid_data_filtered_per_platform.csv"
+filtered_file_path = "../Datasets/rfid_data_filtered_per_platform.csv"
 filtered_data.to_csv(filtered_file_path, index=False)
 
 # Plot results

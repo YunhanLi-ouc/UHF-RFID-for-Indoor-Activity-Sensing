@@ -8,7 +8,7 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import confusion_matrix, classification_report
 
 # 1️⃣  加载数据集（请替换 'your_data.csv' 为实际文件名）
-df = pd.read_csv('Datasets/rfid_data_timestamp.csv')  # 确保数据文件包含 RSSI, Phase, Label
+df = pd.read_csv('../Datasets/rfid_data_timestamp.csv')  # 确保数据文件包含 RSSI, Phase, Label
 
 # 2️⃣  选择特征（仅使用 RSSI 和 Phase）
 X = df[['RSSI', 'Phase']].values  # 只选取 RSSI 和 Phase 作为特征

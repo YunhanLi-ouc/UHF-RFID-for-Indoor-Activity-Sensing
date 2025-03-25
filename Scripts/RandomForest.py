@@ -8,7 +8,7 @@ from sklearn.metrics import classification_report, confusion_matrix
 import joblib
 
 # Load Kalman-filtered dataset
-file_path = "Datasets/rfid_data_filtered.csv"
+file_path = "../Datasets/rfid_data_filtered.csv"
 df = pd.read_csv(file_path)
 
 # Ensure proper time order
@@ -31,7 +31,7 @@ clf = RandomForestClassifier(n_estimators=200, max_depth=10, random_state=42)
 clf.fit(X_train, y_train)
 
 # Save the trained model
-model_filename = "rfid_platform_classifier.pkl"
+model_filename = "../rfid_platform_classifier.pkl"
 joblib.dump(clf, model_filename)
 print(f"Trained model saved as: {model_filename}")
 

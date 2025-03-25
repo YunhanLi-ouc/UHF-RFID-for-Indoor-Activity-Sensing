@@ -7,7 +7,7 @@ from joblib import load
 
 # --- Configuration ---
 LOG_DIR = r"C:\\Users\\Asus\\Documents\\HW2024-25\\Project\\DataSelect"
-MODEL_FILE = "rfid_platform_classifier.pkl"
+MODEL_FILE = "../rfid_platform_classifier.pkl"
 MQTT_BROKER = "localhost"
 TOPIC_RSSI = "rfid/data/rssi"
 TOPIC_PHASE = "rfid/data/phase"

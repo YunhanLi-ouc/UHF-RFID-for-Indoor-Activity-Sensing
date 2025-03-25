@@ -4,7 +4,7 @@ import seaborn as sns
 from scipy.spatial.distance import euclidean
 
 # 读取数据
-file_path = "Datasets/rfid_data_3p.csv"  # 请替换为你的文件路径
+file_path = "../Datasets/rfid_data_3p.csv"  # 请替换为你的文件路径
 df = pd.read_csv(file_path)
 
 # 查看数据基本信息
